@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="UK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Анкета студента</h1>
+    <p>Будь ласка уважно заповни <b>всі поля</b></p>
+    <form method="post" action="https://formspree.io/eperhun@gmail.com">
+        <fieldset>
+            <legend>Контактні дані</legend>
+            <label>
+            <input type="text" name="name" required placeholder="Імя">
+                    </label>
+                    <br>
+                    <label>
+            <input type="text" name="Last-name" required placeholder="Прізвище">
+                    </label>
+                    <br>
+                    <label>
+            <input type="email" name="client-email" required placeholder="e-mail">
+                    </label>
+                    <br>
+                    <label>
+            <input type="text" name="city" required placeholder="місто">
+                    </label>
+                    <br>
+                    <label>
+            <input type="text" name="telephone" required  placeholder="+380671006999"
+            title="+380671006999">
+                    </label>
+                    <br>
+                    <label></label>
+                    <br>
+            <label>
+                <input type="radio" name="client-gender" value="male">
+                Male
+            </label>
+             <label>
+                <input type="radio" name="client-gender" value="female">
+                Female
+            </label>
+             <label>
+                <input type="radio" name="client-gender" value="other" checked>
+                Other
+            </label>
+            <br><br>
+            <label>Day of Birth
+                <select name="month">
+                    <option value="month">Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="Decemder">Decemder</option>
+                </select>
+            </label>
+            <label>
+            <select name="Day">
+                <option value="day">day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>    
+            </label>
+             <label>
+            <select name="Year">
+                <option value="year">Year</option>
+                <option value="1980">1980</option>
+            </select>    
+            </label>
+            <br><br>
+            <label>Passport Serial Number:
+                <input type="text" name="pass-serial-number" required 
+                pattern="[A-Z]{2}[\d]{6}" placeholder="AA112233"
+                title="AA112233">
+            </label>
+            <br><br>
+        <label>Password:
+            <input type="password" name="client-password" placeholder="Пароль">
+        </label>
+        <br><br><br>
+        <input type="submit" value="НАДІСЛАТИ">
+        <input type="reset" value="Ой всьо!">
+        </fieldset>
+            
+        
+        
+    </form>
+    <br>
+    <a href="table.html">Перейти до таблиці</a>
+</body>
+</html>
